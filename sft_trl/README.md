@@ -39,6 +39,7 @@ Modify the launch script at [`slurm_scripts`](./slurm_scripts/sft.sh)
 ```
 sbatch slurm_scripts/sft.sh
 ```
+Full model weight training on a 34B model requires minimum of 2 nodes and atleast 3 nodes is required. Also note that as you increase the amount of nodes, the training becomes more unstable and prone to nccl crashes/hangs. 
 
 ## Useful links
 
@@ -46,6 +47,7 @@ This work was heavily inspired by:
 * https://github.com/pacman100/DHS-LLM-Workshop/tree/main
 * https://www.philschmid.de/fine-tune-llms-in-2024-with-trl
 * https://github.com/huggingface/alignment-handbook
+* https://wandb.ai/capecape/alpaca_ft/reports/How-to-Fine-tune-an-LLM-Part-3-The-Hugging-Face-Trainer--Vmlldzo1OTEyNjMy
 
 My own fork of the alignment handbook is
 https://github.com/Vmjkom/alignment-handbook (wip).
