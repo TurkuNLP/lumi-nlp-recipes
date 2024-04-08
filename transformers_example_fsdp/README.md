@@ -1,6 +1,6 @@
 # Starter example of training Poro with FSDP using HuggingFace 
 
-Disclaimer: This is a very light example
+Disclaimer: This is a very light and un-optimized example. This is just merely to show a one way to launch training with FSDP. For a proper, working solution, please use sft_trl.
 
 ## Environment
 I'm using singularity-containers which have PyTorch, Apex, aws-ofi-rccl-plugin for libfabric and flash-attn for rocm as my base python environment. As singularity-containers are immutable,
