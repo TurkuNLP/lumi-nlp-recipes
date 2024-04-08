@@ -1,5 +1,7 @@
 # Starter example of training Poro with FSDP using HuggingFace 
 
+Disclaimer: This is a very light example
+
 ## Environment
 I'm using singularity-containers which have PyTorch, Apex, aws-ofi-rccl-plugin for libfabric and flash-attn for rocm as my base python environment. As singularity-containers are immutable,
 additional packages get installed with pip --user, and by setting PYTHONUSERPATH-environment variable we can set this userspace location to an arbitrary location. 
@@ -11,10 +13,15 @@ cd lumi-tools
 bash container_scripts/prepare_container.sh
 ```
 
-### Opening a shell within the container
+### Prepare data
+
 ```
 bash container_scripts/shell_into_container.sh
+python3 prepare_paraphrase_corpus.py
 ```
 
-## Running FSDP example multi-node on LUMI
+### Running the training
 
+Edit the launcher `pretrain_clm_singularity.sh` to point to your directories, model you want to train etc. 
+
+`sbatch pretrain_clm_singularity.sh`
