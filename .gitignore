@@ -1,0 +1,4 @@
+sft_trl/logs/*
+sft_trl/slurm_scripts/sft_debug.sh
+sft_trl/training/__pycache__/
+sft_trl/core
