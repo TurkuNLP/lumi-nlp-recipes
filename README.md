@@ -39,5 +39,3 @@ use basic linux monitoring tools
 `htop`
 `tree`
 ...
-
-```
