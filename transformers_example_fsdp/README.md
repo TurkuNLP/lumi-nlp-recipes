@@ -25,3 +25,10 @@ python3 prepare_paraphrase_corpus.py
 Edit the launcher `pretrain_clm_singularity.sh` to point to your directories, model you want to train etc. 
 
 `sbatch pretrain_clm_singularity.sh`
+
+
+
+### Simplest example:
+
+Simply training with english wikipedia
+https://github.com/luukkonenr/lumi-tools/tree/main/finetuning/transformers_example
