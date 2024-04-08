@@ -32,8 +32,11 @@ def main(model_args, data_args, training_args):
 
 
     ##DATA##
-    
-    dataset = load_dataset("")
+    #Load from a jsonl file
+    #dataset = load_dataset("json", data_files="my_file.json",split="train")
+    #Load from hf hub
+    dataset = load_dataset("Villekom/ultrachat-16k-fi-oai",split="train")
+
 
     ##Tokenizer##
     tokenizer = get_tokenizer(model_args,data_args)
