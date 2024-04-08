@@ -6,7 +6,7 @@ CALLER_PATH=$(dirname "${BASH_SOURCE[1]}")
 export PYTHONUSERBASE="$CALLER_PATH/pythonuserbase" 
 mkdir -p $PYTHONUSERBASE
 
-BIND_PATHS="/scratch/project_462000086,/scratch/project_462000319/,/scratch/project_462000444,/flash/project_462000319"
+BIND_PATHS="/scratch/project_462000558,/projappl/project_462000558,/flash/project_462000558"
 export BINDS="-B $PWD -B $BIND_PATHS"
 
 echo "Set CONTAINER=$CONTAINER"
