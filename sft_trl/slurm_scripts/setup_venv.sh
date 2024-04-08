@@ -8,8 +8,8 @@
 #SBATCH --cpus-per-task=7
 #SBATCH --time=00:10:00
 #SBATCH --account=project_462000558
-#SBATCH -o logs/%x.out
-#SBATCH -e logs/%x.err
+#SBATCH -o %x.out
+#SBATCH -e %x.err
 
 mkdir -p logs
 
