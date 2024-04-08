@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=sft_poro
 #SBATCH --account=project_462000558
-#SBATCH --partition=small-g
+#SBATCH --partition=dev-g
 #SBATCH --cpus-per-task=56
 #SBATCH --nodes=3
 #SBATCH --gpus-per-node=8
@@ -30,10 +30,12 @@ module load pytorch/2.1 #The latest pytorch module seems to have issues with che
                         #https://github.com/huggingface/transformers/issues/27925 seems to be related
 
 #Activate python venv
-source /path/to/venv/bin/activate
+source /path/to/.venv/bin/activate
 
 #Replace this to the venv you created
-export PYTHONPATH=""
+export PYTHONPATH="path/to/venv/lib/python3.10/site-packages"
+
+export HF_HOME=/scratch/project_462000558/cache
 
 #Variables for distributed enviroment
 export MASTER_PORT=$(expr 10000 + $(echo -n $SLURM_JOBID | tail -c 4))
