@@ -10,7 +10,7 @@ additional packages get installed with pip --user, and by setting PYTHONUSERPATH
 
 ### Setting up
 ```git clone https://github.com/luukkonenr/lumi-tools.git
-cd lumi-tools
+cd lumi-nlp-recipes
 bash container_scripts/prepare_container.sh
 ```
 
