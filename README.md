@@ -21,15 +21,21 @@ https://huggingface.co/docs/trl/main/en/index
 
 Interactive shell on an active run.
 `srun --jobid <JOBID> --overlap --pty bash`
+
 monitor gpu-usage 
+
 `rocm-smi`
+
 show update-loop with  `watch`
+
 `watch -n 0.5 rocm-smi`
 
 Load administrator tools
+
 `module load LUMI/23.09 && module load systools/23.09`
 
 use basic linux monitoring tools
+
 `htop`
 `tree`
 ...
