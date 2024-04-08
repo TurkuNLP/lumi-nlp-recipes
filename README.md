@@ -14,3 +14,13 @@ https://huggingface.co/docs/trl/main/en/index
 
 ## Running a simple Poro finetuning with FSDP
 [https://github.com/TurkuNLP/lumi-nlp-recipes/tree/main/transformers_example_fsdp](https://github.com/TurkuNLP/lumi-nlp-recipes/tree/main/transformers_example_fsdp)
+
+
+
+## Handy commands:
+
+Interactive node on an active run.
+
+```
+srun --jobid <JOBID> --overlap --pty bash
+```
