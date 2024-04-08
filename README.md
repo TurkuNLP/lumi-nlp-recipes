@@ -14,3 +14,28 @@ https://huggingface.co/docs/trl/main/en/index
 
 ## Running a simple Poro finetuning with FSDP
 [https://github.com/TurkuNLP/lumi-nlp-recipes/tree/main/transformers_example_fsdp](https://github.com/TurkuNLP/lumi-nlp-recipes/tree/main/transformers_example_fsdp)
+
+
+
+## Handy commands:
+
+Interactive shell on an active run.
+`srun --jobid <JOBID> --overlap --pty bash`
+
+monitor gpu-usage 
+
+`rocm-smi`
+
+show update-loop with  `watch`
+
+`watch -n 0.5 rocm-smi`
+
+Load administrator tools
+
+`module load LUMI/23.09 && module load systools/23.09`
+
+use basic linux monitoring tools
+
+`htop`
+`tree`
+...
