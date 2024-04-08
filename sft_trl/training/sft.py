@@ -33,7 +33,8 @@ def main(model_args, data_args, training_args):
 
     ##DATA##
     
-    dataset = load_dataset("")
+
+    dataset = load_dataset("Villekom/ultrachat-16k-fi-oai",split="train")
 
     ##Tokenizer##
     tokenizer = get_tokenizer(model_args,data_args)
