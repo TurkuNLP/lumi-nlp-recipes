@@ -9,4 +9,3 @@
 ### Trl - Transformers Reinforcement Learning
 https://huggingface.co/docs/trl/main/en/index
 
-## Running training on LUMI with Megatron in a multi-node setup
