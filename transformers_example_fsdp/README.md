@@ -1,4 +1,4 @@
-# Starter example of training Poro with FSDP using HuggingFace 
+# Starter example of training Poro with FSDP using HuggingFace with custom singularity setup
 
 Disclaimer: This is a very light and un-optimized example. This is just merely to show a one way to launch training with FSDP. For a proper, working solution, please use sft_trl.
 Remember to change the hardcoded paths.
