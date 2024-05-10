@@ -26,14 +26,8 @@ set -x
 echo "PWD" $PWD
 
 module use /appl/local/csc/modulefiles/ #It is adviced to add this into your .bashrc/.profile
-module load pytorch/2.1 #The latest pytorch module seems to have issues with checkpoint saving/retrieving on multi-node
-                        #https://github.com/huggingface/transformers/issues/27925 seems to be related
+module load pytorch
 
-#Activate python venv
-source /path/to/.venv/bin/activate
-
-#Replace this to the venv you created
-export PYTHONPATH="path/to/venv/lib/python3.10/site-packages"
 
 export HF_HOME=/scratch/project_462000558/cache
 
