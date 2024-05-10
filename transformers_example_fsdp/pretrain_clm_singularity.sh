@@ -6,7 +6,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --mem=0
 #SBATCH --partition=dev-g
-#SBATCH --time=00-00:35:00
+#SBATCH --time=00-01:00:00
 #SBATCH --gpus-per-node=mi250:8
 #SBATCH --exclusive=user
 #SBATCH --hint=nomultithread
